@@ -32,26 +32,30 @@ class Faqs extends React.Component {
     //call api, then set currentFaq  to real faq
     this.setState({
       currentList: faqs,
-      currentMainContent: faqs[0].body
+      currentMainContent: faqs[0]
     });
   }
   handleOnClick = key => {
     const { currentList } = this.state;
     this.setState({
-      currentMainContent: currentList[key].body
+      currentMainContent: currentList[key]
     });
   };
   render() {
     const { currentList, currentMainContent } = this.state;
+
     return (
       <OutterWrapper>
         <Grid columns={2}>
-          <Grid.Column width={10}>{currentMainContent}</Grid.Column>
+          <Grid.Column width={10}>
+            <h1>{currentMainContent && currentMainContent.title}</h1>
+            <p>{currentMainContent && currentMainContent.body}</p>
+          </Grid.Column>
           <Grid.Column width={6}>
             <List bulleted link size="big">
               {currentList.map((cf, index) => (
                 <List.Item
-                  value="*"
+                  key={index}
                   as="a"
                   style={{ marginBottom: "20px" }}
                   onClick={() => this.handleOnClick(index)}

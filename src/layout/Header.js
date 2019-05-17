@@ -3,7 +3,7 @@ import { Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 const Header = () => (
   <Menu inverted>
-    <Menu.Item as="a" header>
+    <Menu.Item>
       <Link to="/">Home</Link>
     </Menu.Item>
 
