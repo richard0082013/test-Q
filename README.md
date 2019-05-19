@@ -1,14 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-#Qantas Cars FAQs App
+# Qantas Cars FAQs App
 
-##instruction
+## instruction
 
 This App has two parts, one is front-end built by ReactJS, and one back-end server built by graphql. 
 
 Download or clone the whole code base, In the project directory, you can run:
-`cd server` to the server directory, then run:
-`npm install` to install the dependencies,then run:
-`npm run start` to start the graphql server in local.
+```sh
+cd server
+npm install
+npm run start
+```
 
 Once the server is running successfully, you can start the front end app with following commands:
 
