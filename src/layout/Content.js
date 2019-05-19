@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Home from "../components/Home";
-import Faqs from "../components/Faqs";
+import Home from "../container/Home";
+import Faqs from "../container/Faqs";
 import styled from "styled-components";
 
 const ContainerWrapper = styled.div`
